@@ -1,6 +1,6 @@
 // import all the modules of the website
 
-import {homeLoad} from './website.js';
+import {homeLoad} from './home.js';
 
 //import the CSS file
 
@@ -17,10 +17,5 @@ let switchModule = (function () {
     const homeTab = document.getElementById('home');
     homeTab.addEventListener("click", homeLoad);
 
-    const menuTab = document.getElementById('menu');
-    menuTab.addEventListener("click", menuLoad);
-
-    const contactTab = document.getElementById('contact');
-    contactTab.addEventListener("click", contactLoad);
 
 })();
