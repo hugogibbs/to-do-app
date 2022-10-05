@@ -1,0 +1,204 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}   
+
+.container {
+    display: grid;
+    grid-template-columns: minmax(200px, 300px) 3fr;
+    grid-template-rows: 15vh 85vh;
+    font-weight: bolder;
+}
+
+.sidebar {
+    background-color: aquamarine;
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    background-color: dodgerblue;
+    color: #f9faf8;
+    padding-top: 20px;
+    padding-left: 20px;
+}
+
+.header {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    background-color:#1f2937;
+    color: white;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+
+}
+
+img.icon {
+    height: 60px;
+    padding-right: 20px;
+}
+
+.title {
+    margin-bottom: 50px;
+    font-size: 22px;
+}
+
+.side1 {
+    margin-bottom: 50px;
+    display: grid;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.side2 {
+    display: grid;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.home, .title, .today, .thisWeek, .projects, .addProject{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 40px 300px;
+    text-decoration: none;
+    color: #f9faf8;
+    font-size: 20px;
+    padding-bottom: 20px;
+}
+
+
+.home:hover {
+    text-decoration: underline;
+}
+
+
+.title:hover {
+    text-decoration: underline;
+}
+
+
+.today:hover {
+    text-decoration: underline;
+}
+
+
+.thisWeek:hover {
+    text-decoration: underline;
+}
+
+.addProject:hover {
+    text-decoration: underline;
+}
+
+.projects {
+    font-size: 28px;
+}
+
+.home {
+    padding-top: 30px;
+}
+
+.header1 {
+    display: grid;
+    grid-template-columns: 600px 200px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+    
+}
+
+.headerLine1 {
+    display: grid;
+    align-items: center;
+    gap: 10px;
+    grid-template-columns: 20px 300px;
+}
+
+.headerLine2 {
+    display: grid;
+    align-items: center;
+    gap: 10px;
+    grid-template-columns: 30px 35px 100px;
+    
+}
+
+input {
+    background-color: #e5e7eb;
+    border-radius: 20px;
+    border: none;
+    width: 500px;
+}
+
+.user {
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.user2 {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+
+.header2 {
+    display: grid;
+    grid-template-columns: 80px 300px 500px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.hi {
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.username {
+    font-size: 22px;
+    padding-top: 5px;
+}
+
+.headerLine5 {
+    display: grid;
+    grid-template-columns: 75px 75px 75px;
+    grid-template-rows: 30px;
+    grid-column: 3 / 4;
+    padding-left: 140px;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+
+.content {
+    
+}
+
+
+.icons {
+    padding-left: 160px;
+}
+
+.star, .eye, .fork {
+    padding-left: 10px;
+}
+
+button.addTask {
+    width: 80px;
+    height: 80px;
+    font-size: 70px;
+    color: white;
+    background-color: limegreen;
+    border: none;
+    border-radius: 50px;
+    margin-top: 140px;
+}
+
+button.addTask:hover {
+    cursor: pointer;
+}
