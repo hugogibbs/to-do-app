@@ -13,6 +13,31 @@
 </head>
 <body>
     
+    <div class="popup" id="popup">
+        <div class="formContainer">
+            <form id="addBook" method="get"> 
+                    <div class="formHeader">
+                        <div class="formTitle">Add new task</div>
+                        <a href="#" id="close" class="close">x</a>
+                    </div>
+                    <input class="formTitle" type="text" id="form_title" name="form_title" placeholder="Title: Business Meeting" required>
+                    <input class="formDetails" type="text" id="form_details" name="form_details" placeholder="Details: Define marketing strategy for FY23 (Optional)" >
+                    <div class="formDate">
+                        <label class="labelDate" for="form_date">Due date:</label>
+                        <input type="date" class="formDate" id="formDate" name="form_date" required>
+                    </div>
+                    <div class="formPriority">
+                        <label class="labelPriority" for="form_prioriry">Priority:</label>
+                        <select class="formPriority" id="formPriority" name="form_priority" required>
+                            <option value="low">Low</option>
+                            <option value="low">Medium</option>
+                            <option value="low">High</option>
+                        </select>   
+                    </div>
+                    <button class="submitBook" type="submit" id="submit_book" name="submit_book">Submit</button>
+            </form>
+        </div>
+    </div>
    
     <div class="container">
 
@@ -24,9 +49,9 @@
                 <a class="home" id="home" href="#"><img src = ./icons/home2.png> Home</a>
                 <a class="today" id="today" href="#"><img src = ./icons/history.png>Today</a>
                 <a class="thisWeek" id="thisWeek" href="#"><img src = ./icons/tasks.png>This week</a>
-                <a class="projects" href="#">Projects</a>
+                <a class="projects" id="projects" href="#">Projects</a>
                 <a class="addProject" href="#"><img src = ./icons/plus.png>Add Project</a>
-                <button class="addTask">+</button>
+                <button class="addTask" id="addTask">+</button>
             </div>
     
         </div>
