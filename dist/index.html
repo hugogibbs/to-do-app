@@ -20,21 +20,21 @@
                         <div class="formTitle">Add new task</div>
                         <a href="#" id="close" class="close">x</a>
                     </div>
-                    <input class="formTitle" type="text" id="form_title" name="form_title" placeholder="Title: Business Meeting" required>
-                    <input class="formDetails" type="text" id="form_details" name="form_details" placeholder="Details: Define marketing strategy for FY23 (Optional)" >
+                    <input class="formTitle" type="text" id="task_title" name="task_title" placeholder="Title: Business Meeting" required>
+                    <input class="formDetails" type="text" id="task_details" name="task_details" placeholder="Details: Define marketing strategy for FY23 (Optional)" >
                     <div class="formDate">
-                        <label class="labelDate" for="form_date">Due date:</label>
-                        <input type="date" class="formDate" id="formDate" name="form_date" required>
+                        <label class="labelDate" for="task_date">Due date:</label>
+                        <input type="date" class="formDate" id="task_date" name="task_date" required>
                     </div>
                     <div class="formPriority">
-                        <label class="labelPriority" for="form_prioriry">Priority:</label>
-                        <select class="formPriority" id="formPriority" name="form_priority" required>
+                        <label class="labelPriority" for="task_prioriry">Priority:</label>
+                        <select class="formPriority" id="task_priority" name="task_priority" required>
                             <option value="low">Low</option>
                             <option value="low">Medium</option>
                             <option value="low">High</option>
                         </select>   
                     </div>
-                    <button class="submitBook" type="submit" id="submit_book" name="submit_book">Submit</button>
+                    <button class="submitTask" type="submit" id="submit_task" name="submit_task">Submit</button>
             </form>
         </div>
     </div>
@@ -62,7 +62,23 @@
                 <div class="headerTitle">To-Do-App</div>
             </div>
         
-            <div class="content" id="content"></div>
+            <div class="content" id="content">
+
+                <table class="booksList" id="booksList">
+
+                    <table id="table" class="table">
+                        <tr>
+                            <th>Name</th>
+                            <th>Details</th>
+                            <th>Date</th>
+                            <th>Priority</th>
+                        </tr>
+                      </table>
+        
+                </table>
+
+
+            </div>
             <script src="main.js"></script>
     
 

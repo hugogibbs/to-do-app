@@ -192,7 +192,7 @@ a {
     height: 100%;
     position: absolute;
     top: 0;
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 }
@@ -269,7 +269,7 @@ input.formTitle, input.formDetails, input.bookPages {
 
 }
 
-button.submitBook {
+button.submitTask {
     background-color: dodgerblue;   
     color: white;
     font-size: 22px;
@@ -284,7 +284,7 @@ button.submitBook {
     
 }
 
-button.submitBook:hover {
+button.submitTask:hover {
     background-color: #3882f6;
 }
 
