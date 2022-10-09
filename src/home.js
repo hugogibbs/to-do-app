@@ -15,6 +15,11 @@ export function homeLoad() {
         popup.style.display = "none";
     })
 
+    const closeButton2 = document.getElementById('submit_task');
+    closeButton2.addEventListener("click", function() {
+        popup.style.display = "none";
+    })
+
     // Declare empty array for the Library
 
     let myArray = [];
@@ -32,12 +37,14 @@ export function homeLoad() {
     document.getElementById('submit_task').addEventListener('click', intakeFormData);
 
     function intakeFormData() {
-        let Title = 'title';
-        let Details = 'details';
-        let Date = 'date';
-        let Priority = 'priority';
+        let Title = document.getElementById("task_title").value;
+        let Details = document.getElementById("task_details").value;
+        let Date = document.getElementById("task_date").value;
+        let Priority = document.getElementById("task_priority").value;
 
         addTaskToArray(Title, Details, Date, Priority);
+
+        document.getElementById("addBook").reset();
         
     }
     
@@ -64,11 +71,19 @@ export function homeLoad() {
             row.id = "tr";
             table.appendChild(row);
 
-            const check = document.createElement('checkbox');
-            check.className = 'check';
+            const checktd = document.createElement('td');
+                checktd.id = 'checktd';
+                checktd.className = 'checktd';
+                row.appendChild(checktd);
+                
+                const check = document.createElement('input');
+                check.type = 'checkbox';
+                check.className = 'check';
+                check.id = "check";
+                checktd.appendChild(check);
 
             for (let key in myArrays) {
-                
+
                 if (`${key}` == 'Details') {
                     console.log("saved details")
                 }
@@ -82,11 +97,8 @@ export function homeLoad() {
         }
     )}
 
-    addTaskToArray("Business Meeting", "Review strategy", "01/01/2023", "High");
-    addTaskToArray("Go for a Walk", "to South Beach", "01/02/2023", "Medium");
-    addTaskToArray("Read a Book", "Unlimited Power", "01/03/2023", "Medium");
-    addTaskToArray("Go to the Gym", "Smart Fit Los Militares", "01/04/2023", "Medium");
-    addTaskToArray("Job Interview", "Software Engineer role", "01/05/2023", "Medium");
-    addTaskToArray("Travel to Miami", "American Airlines Flight", "01/06/2023", "High"); 
+    addTaskToArray("Business Meeting", "Review strategy", "2023-01-01", "High");
+    addTaskToArray("Go to the Gym", "Smart Fit Los Militares", "2023-04-01", "Medium");
+    addTaskToArray("Travel to Miami", "American Airlines Flight", "2023-06-01", "High"); 
 
 }

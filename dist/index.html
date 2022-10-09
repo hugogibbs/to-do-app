@@ -12,7 +12,7 @@
 <body>
     <div class="popup" id="popup">
         <div class="formContainer">
-            <form id="addBook" method="get"> 
+            <form id="addBook" method="get" onsubmit="return false"> 
                     <div class="formHeader">
                         <div class="formTitle">Add new task</div>
                         <a href="#" id="close" class="close">x</a>
@@ -24,11 +24,11 @@
                         <input type="date" class="formDate" id="task_date" name="task_date" required>
                     </div>
                     <div class="formPriority">
-                        <label class="labelPriority" for="task_prioriry">Priority:</label>
+                        <label class="labelPriority" for="task_priority">Priority:</label>
                         <select class="formPriority" id="task_priority" name="task_priority" required>
-                            <option value="low">Low</option>
-                            <option value="low">Medium</option>
-                            <option value="low">High</option>
+                            <option value="Low">Low</option>
+                            <option value="Medium">Medium</option>
+                            <option value="High">High</option>
                         </select>   
                     </div>
                     <button class="submitTask" type="submit" id="submit_task" name="submit_task">Submit</button>
