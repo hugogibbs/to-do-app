@@ -32,16 +32,13 @@ export function homeLoad() {
     document.getElementById('submit_task').addEventListener('click', intakeFormData);
 
     function intakeFormData() {
-        let Title = document.getElementById("task_title").value;
-        let Details = document.getElementById("task_details").value;
-        let Date = document.getElementById("task_date").value;
-        let Priority = document.getElementById("task_prioriy").value;
+        let Title = 'title';
+        let Details = 'details';
+        let Date = 'date';
+        let Priority = 'priority';
 
-
-        addTasktoArray(Title, Details, Date, Priority);
+        addTaskToArray(Title, Details, Date, Priority);
         
-        document.getElementById("addTask").reset();
-
     }
     
     function addTaskToArray(Title, Details, Date, Priority) {
@@ -61,12 +58,14 @@ export function homeLoad() {
         removeTable[i].remove();
     }
 
-        
         myArray.forEach(myArrays => {
             const row = document.createElement("tr");
             row.className = "tr";
             row.id = "tr";
             table.appendChild(row);
+
+            const check = document.createElement('checkbox');
+            check.className = 'check';
 
             for (let key in myArrays) {
                 
