@@ -4,7 +4,8 @@ export function todayLoad() {
     contentDiv.replaceChildren();
 
     const todayPanel = document.createElement('div');
-    todayPanel.textContent = 'HELLO TODAY';
+    todayPanel.textContent = 'Today';
+    todayPanel.classList = 'todayMessage';
     content.appendChild(todayPanel);
 
 }

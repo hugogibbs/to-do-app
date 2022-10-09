@@ -4,7 +4,8 @@ export function projectsLoad() {
     contentDiv.replaceChildren();
 
     const projectsPanel = document.createElement('div');
-    projectsPanel.textContent = 'HELLO PROJECTS';
+    projectsPanel.textContent = 'Projects';
+    projectsPanel.className = 'projectsMessage';
     content.appendChild(projectsPanel);
 
 }

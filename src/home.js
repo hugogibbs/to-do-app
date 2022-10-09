@@ -1,5 +1,13 @@
 export function homeLoad() {
     
+    const contentDiv = document.querySelector('#content');
+    contentDiv.replaceChildren();
+
+    const homePanel = document.createElement('div');
+    homePanel.textContent = 'Home';
+    homePanel.className = 'homeMessage';
+    content.appendChild(homePanel);
+    
     const taskTable = document.createElement('table');
     taskTable.className = 'table';
     taskTable.id = 'table';

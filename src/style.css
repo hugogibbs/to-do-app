@@ -22,6 +22,34 @@ body {
     height: 100%;
 }
 
+
+
+.homeMessage {
+    font-size: 32px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+
+.projectsMessage {
+    font-size: 32px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+
+.todayMessage {
+    font-size: 32px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+.weekMessage {
+    font-size: 32px;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
 .header {
     grid-column: 1 / 3;
     grid-row: 1 / 2;
@@ -176,7 +204,7 @@ a {
 }
 
 .content {
-
+    background-color: aliceblue;
 }
 
 .icons {

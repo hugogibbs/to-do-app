@@ -4,7 +4,8 @@ export function thisWeekLoad() {
     contentDiv.replaceChildren();
 
     const thisWeekPanel = document.createElement('div');
-    thisWeekPanel.textContent = 'HELLO THIS WEEK';
+    thisWeekPanel.textContent = 'This Week';
+    thisWeekPanel.className = 'weekMessage';
     content.appendChild(thisWeekPanel);
 
 }
