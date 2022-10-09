@@ -9,9 +9,7 @@ import {projectsLoad} from './projects.js';
 
 import './style.css';   
 
-
 homeLoad();
-
 
 // module to swith tabs between home, menu and contact
 
