@@ -415,3 +415,7 @@ input.check {
 #checktd {
     width: 0px;
 }
+
+select.formPriority {
+    transition: opacity 3s ease-in-out 1s;
+}
